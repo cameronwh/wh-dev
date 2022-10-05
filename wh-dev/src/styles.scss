@@ -7,10 +7,14 @@ $wildblue: #9CADCE;
 $middleblue: #7EC4CF;
 $maximumblue: #52B2CF;
 
+html {
+    font-size: 100%;
+}
+
 .main {
     padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
+    margin: 1em;
+    width: calc(100% - 2em);
+    height: calc(100% - 2em);
     background-color: $lightperiwinkle;
 }
