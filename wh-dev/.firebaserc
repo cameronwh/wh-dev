@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "wh-dev-46c85": {
+      "hosting": {
+        "wh-dev": [
+          "wh-dev-46c85"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "wh-dev-46c85"
+  }
+}
