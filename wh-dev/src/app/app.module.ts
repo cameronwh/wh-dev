@@ -4,6 +4,7 @@ import { provideFirebaseApp, initializeApp } from '@angular/fire/app'
 
 import { AppComponent } from './app.component';
 import { environment } from './../environments/environment';
+import { ComponentsModule } from './components/components.module';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import { environment } from './../environments/environment';
   ],
   imports: [
     BrowserModule,
+    ComponentsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase))
   ],
   providers: [],
