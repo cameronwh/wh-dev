@@ -13,4 +13,8 @@ export class TicketComponent implements OnInit {
         
     }
 
+    onClick($event: any) {
+        console.log('clicked ticketa!', $event);
+    }
+
 }

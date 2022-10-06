@@ -1,4 +1,4 @@
-@import './../styles.scss';
+@import './assets/styles/theme.scss';
 
 .container {
     height: 100vh;
@@ -10,7 +10,7 @@
     .title {
         text-align: center;
         display: flex;
-        color: $cameopink;
+        color: $p-main;
         font-size: 50vw;
         font-family: 'Righteous', serif;
     }

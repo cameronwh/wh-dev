@@ -1,25 +1,18 @@
 @import './../../../../styles.scss';
 
+@import './../../../assets/styles/theme.scss';
+
 .ticket {
-    height: 400px;
-    width: 350px;
-    border: 4px solid lighten($cameopink, 5%);
-    background-color: $cameopink;
-    border-radius: 10px;
+    height: 15em;
+    width: 13em;
+    border: 0.2em solid darken($p-dark, 6%);
+    background-color: $p-dark;
+    border-radius: 1em;
     display: flex;
     flex-direction: column;
 
     .ticket-header {
-        flex: 1 1 auto;
-        border: 1px solid black;
-    }
-
-    .ticket-body {
-        flex: 1 1 auto;
-        border-radius: 10px;
-        margin: 0 15px 0 15px;
-        background-color: $lightperiwinkle;
-        border: 4px solid lighten($cameopink, 5%);
-        z-index: 1;
+        flex: 0 1 2em;
+        cursor: pointer;
     }
 }
