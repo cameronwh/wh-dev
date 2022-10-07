@@ -1,1 +1,9 @@
-<p>ticket-column works!</p>
+<section>
+    <div class="button" (click)="onClick()">
+        Click me
+    </div>
+
+    <div *ngIf="childTickets.length > 0">
+        <wh-ticket *ngFor="let ticket of childTickets" (onClose)="onTicketClose($event)"></wh-ticket>
+    </div>
+</section>

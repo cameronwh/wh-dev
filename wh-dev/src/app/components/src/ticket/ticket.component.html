@@ -1,8 +1,19 @@
-<div class="ticket">
-    <div class="ticket-header" (click)="onClick($event)" cdkDrag>
+<div class="ticket" cdkDrag>
+    <div class="header-container">
+        <section>
+            <div class="text-container" cdkDragHandle>
 
+            </div>
+            <div class="btn-container">
+                <span class="material-icons material-symbols-outlined" (click)="onCloseClick()">
+                    cancel
+                </span>
+            </div>
+        </section>
     </div>
-    <div class="ticket-body">
-        
+    <div class="body-container">
+        <div>
+            
+        </div>
     </div>
 </div>

@@ -14,7 +14,6 @@ import { ComponentsModule } from './components/components.module';
   imports: [
     BrowserModule,
     ComponentsModule,
-    DragDropModule,
     provideFirebaseApp(() => initializeApp(environment.firebase))
   ],
   providers: [],

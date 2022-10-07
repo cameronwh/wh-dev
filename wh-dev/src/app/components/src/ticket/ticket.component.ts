@@ -1,11 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
 
 @Component({
     selector: 'wh-ticket',
     templateUrl: './ticket.component.html',
     styleUrls: ['./ticket.component.scss']
 })
-export class TicketComponent implements OnInit {
+export class TicketComponent implements OnInit, OnDestroy {
+
+    public id: number = -1;
+
+    @Output()
+    onClose: EventEmitter<number> = new EventEmitter();
 
     constructor() { }
 
@@ -13,8 +18,12 @@ export class TicketComponent implements OnInit {
         
     }
 
-    onClick($event: any) {
-        console.log('clicked ticketa!', $event);
+    onCloseClick() {
+        this.onClose.emit(this.id);
+    }
+
+    ngOnDestroy() {
+        
     }
 
 }
